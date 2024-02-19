@@ -1,0 +1,100 @@
+:root {
+	/* Headline */
+	--font-size-h1-1920: 56px;
+	--font-size-h1-1366: 56px;
+	--font-size-h1-786: 32px;
+	--font-size-h2-1920: 40px;
+	--font-size-h2-1366: 40px;
+	--font-size-h2-786: 28px;
+	--font-size-h3-1920: 28px;
+	--font-size-h3-1366: 28px;
+	--font-size-h3-786: 24px;
+	--font-size-h4-1920: 20px;
+	--font-size-h4-1366: 20px;
+	--font-size-h4-786: 20px;
+	--font-weight-h1: 800;
+	--font-weight-h2: 800;
+	--font-weight-h3: 800;
+	--font-weight-h4: 800;
+
+	/* Body */
+	--font-size-t1-1920: 20px;
+	--font-size-t1-1366: 20px;
+	--font-size-t1-786: 20px;
+	--font-size-t2-1920: 16px;
+	--font-size-t2-1366: 16px;
+	--font-size-t2-786: 16px;
+	--font-size-t2_b-1920: 16px;
+	--font-size-t2_b-1366: 16px;
+	--font-size-t2_b-786: 16px;
+	--font-size-t3-1920: 14px;
+	--font-size-t3-1366: 14px;
+	--font-size-t3-786: 14px;
+	--font-size-t3_b-1920: 14px;
+	--font-size-t3_b-1366: 14px;
+	--font-size-t3_b-786: 14px;
+	--font-weight-t1: 400;
+	--font-weight-t2: 400;
+	--font-weight-t2_b: 700;
+	--font-weight-t3: 400;
+	--font-weight-t3_b: 700;
+	--line-height-t1: 30px;
+	--line-height-t2: 24px;
+	--line-height-t3: 21px;
+
+	/* Colors */
+
+	/* Main */
+	--color-color1-main: #14cccc;
+	--color-color1-dark: #11a6a6;
+	--color-color1-light: #17e5e5;
+	--color-gray-black: #030d0d;
+	--color-gray-dark: #3d4040;
+	--color-gray-light: #daf2f2;
+	--color-gray-lighter: #e1fafa;
+	--color-gray-white: #fff;
+	--color-error: #f66;
+
+	/* Text & Icon */
+	--color-text-color1-main: var(--color-color1-main);
+	--color-text-color1-dark: var(--color-color1-dark);
+	--color-text-color1-light: var(--color-color1-light);
+	--color-text-gray-black: var(--color-gray-black);
+	--color-text-gray-dark: var(--color-gray-dark);
+	--color-text-gray-white: var(--color-gray-white);
+
+	/* Button */
+	--color-button-primary-static: var(--color-color1-main);
+	--color-button-primary-hover: var(--color-color1-light);
+	--color-button-primary-press: var(--color-color1-dark);
+	--color-button-outline-static: var(--color-color1-main);
+	--color-button-outline-hover: var(--color-color1-light);
+	--color-button-outline-press: var(--color-color1-dark);
+	--color-button-shadow-static: var(--color-gray-white);
+	--color-button-shadow-hover: var(--color-gray-lighter);
+	--color-button-shadow-press: var(--color-gray-light);
+	--color-button-social-static: var(--color-gray-white);
+	--color-button-social-hover: var(--color-gray-lighter);
+	--color-button-social-press: var(--color-gray-light);
+	--color-button-radio-static: var(--color-gray-white);
+	--color-button-radio-hover: var(--color-gray-light);
+	--color-button-radio-press: var(--color-color1-main);
+
+	/* Link */
+	--color-link-static: var(--color-text-gray-dark);
+	--color-link-hover: var(--color-color1-dark);
+	--color-link-press: var(--color-gray-light);
+
+	/* Input */
+	--color-input-static: var(--color-gray-light);
+	--color-input-hover: var(--color-color1-light);
+	--color-input-focus: var(--color-color1-main);
+	--color-input-writing: var(--color-color1-main);
+	--color-input-active: var(--color-gray-light);
+	--color-input-error: var(--color-error);
+
+	/* Other */
+	--color-vk: #07f;
+	--color-tg: #27a6e5;
+	--color-shadow: #05191914;
+}

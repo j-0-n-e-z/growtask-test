@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./scripts/index.js" defer></script>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/media.css" />
+		<title>Growtask Test</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-content section-content">
+				<div class="header-wrapper">
+					<a class="logo" href="#"></a>
+					<span class="logo-replacer heading heading-h4">Меню</span>
+					<label class="menu-toggle button">
+						<input class="hidden" type="checkbox" />
+						<svg
+							class="menu-toggle__burger"
+							width="20"
+							height="14"
+							viewBox="0 0 20 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1 7H19M1 13H19M1 1H19"
+								stroke="var(--color-gray-white)"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<svg
+							class="menu-toggle__close"
+							width="20"
+							height="14"
+							viewBox="0 0 14 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976315 13.3166 -0.0976315 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071Z"
+								fill="white"
+							/>
+						</svg>
+					</label>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li>
+							<a class="link text text-t2_b" href="#hero"> Текст и картинки</a>
+						</li>
+						<li>
+							<a class="link text text-t2_b" href="#slider"> Пример слайдера</a>
+						</li>
+						<li>
+							<a class="link text text-t2_b" href="#image-picker">
+								Кнопки и картинки</a
+							>
+						</li>
+						<li>
+							<a class="link text text-t2_b" href="#faq"> Вопрос - ответ</a>
+						</li>
+					</ul>
+					<a class="button" href="#form">К форме</a>
+					<div class="menu__socials">
+						<a
+							class="social-link"
+							href="https://vk.com/growtask"
+							target="_blank"
+						>
+							<svg
+								width="28"
+								height="18"
+								viewBox="0 0 28 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M15.1798 17.3996C6.15993 17.3996 1.01515 11.0933 0.800781 0.599609H5.31896C5.46736 8.30171 8.79828 11.5642 11.4366 12.2368V0.599609H15.691V7.24225C18.2963 6.95637 21.0336 3.92934 21.9571 0.599609H26.2114C25.8634 2.3265 25.1698 3.96159 24.1739 5.40261C23.178 6.84363 21.9013 8.05957 20.4235 8.97438C22.073 9.81028 23.53 10.9934 24.6982 12.4457C25.8664 13.898 26.7194 15.5864 27.2008 17.3996H22.5177C22.0856 15.8247 21.2073 14.415 19.9928 13.347C18.7784 12.279 17.282 11.6003 15.691 11.396V17.3996H15.1798Z"
+									fill="#0077FF"
+								/>
+							</svg>
+						</a>
+						<a class="social-link" href="https://t.me/growtask" target="_blank">
+							<svg
+								width="24"
+								height="21"
+								viewBox="0 0 24 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M23.6008 1.12306L19.9943 19.9511C19.9943 19.9511 19.4897 21.2565 18.1035 20.6305L9.78227 14.0235L9.74368 14.004C10.8677 12.9589 19.5837 4.84359 19.9646 4.47574C20.5543 3.90603 20.1882 3.56687 19.5035 3.99722L6.62893 12.464L1.66195 10.7333C1.66195 10.7333 0.88029 10.4454 0.805093 9.81932C0.728906 9.19223 1.68767 8.85307 1.68767 8.85307L21.9365 0.627128C21.9365 0.627128 23.6008 -0.130093 23.6008 1.12306Z"
+									fill="#27A6E5"
+								/>
+							</svg>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero" id="hero">
+				<div class="hero-content section-content">
+					<div class="hero__info">
+						<h1 class="hero__heading heading heading-h1">
+							Покажи нам чудеса <br />
+							<span class="text-green">своей вёрстки</span>
+						</h1>
+						<p class="hero__description text text-t1">
+							Это тестовое задание, которое нужно просто и грамотно сверстать.
+							Мы уверены, что у тебя всё получится.
+						</p>
+					</div>
+					<article class="hero__banner banner">
+						<span class="heading heading-h4 text-white">
+							Покажи скролл на
+							<span class="text-green-light">до формы:</span>
+						</span>
+						<a class="button" href="#form">К форме</a>
+					</article>
+					<ul class="hero__images">
+						<li>
+							<img
+								class="hero__image"
+								src="./assets/img/hero/laptop.png"
+								alt="Изображение ноутбука"
+							/>
+						</li>
+						<li>
+							<img
+								class="hero__image"
+								src="./assets/img/hero/circle.png"
+								alt="Изображение полукруга"
+							/>
+						</li>
+						<li>
+							<img
+								class="hero__image"
+								src="./assets/img/hero/hands.png"
+								alt="Изображение рук"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="vacancy" id="vacancy">
+				<div class="vacancy-content section-content">
+					<div class="vacancy__about">
+						<div class="vacancy__about__inner">
+							<h2 class="heading heading-h2">Про вакансию</h2>
+							<p class="vacancy__about__text text text-t1">
+								Мы ищем аккуратного верстальщика, который хочет учиться и
+								развиваться. С этим мы, конечно же, поможем.
+								<br /><br />Напомним про условия:
+							</p>
+						</div>
+						<ul class="vacancy__banners">
+							<li>
+								<article class="vacancy__banner banner">
+									<span class="heading heading-h1 text-green-light"
+										>20 000</span
+									>
+									<span class="text text-t2 text-white"
+										>Твой оклад на время стажировки (Возможны премии)</span
+									>
+								</article>
+							</li>
+							<li>
+								<article class="vacancy__banner banner">
+									<span class="heading heading-h1 text-green-light">5/2</span>
+									<span class="text text-t2 text-white">Рабочий график</span>
+								</article>
+							</li>
+							<li>
+								<article class="vacancy__banner banner">
+									<span class="heading heading-h1 text-green-light">8 ч</span>
+									<span class="text text-t2 text-white">Рабочий день</span>
+								</article>
+							</li>
+						</ul>
+					</div>
+					<ul class="vacancy__images">
+						<li>
+							<img
+								class="vacancy__image"
+								src="./assets/img/vacancy/vacancy-1.png"
+								alt="Изображение вакансии 1"
+							/>
+						</li>
+						<li>
+							<img
+								class="vacancy__image"
+								src="./assets/img/vacancy/vacancy-2.png"
+								alt="Изображение вакансии 2"
+							/>
+						</li>
+						<li>
+							<img
+								class="vacancy__image"
+								src="./assets/img/vacancy/vacancy-3.png"
+								alt="Изображение вакансии 3"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="slider" id="slider">
+				<div class="slider-hider"></div>
+				<div class="slider-content section-content">
+					<div class="slider__head">
+						<h2 class="heading heading-h2">Сверстай слайдер</h2>
+						<div class="slider__navigation">
+							<button class="arrow-button arrow-button_left"></button>
+							<button class="arrow-button arrow-button_right"></button>
+						</div>
+					</div>
+					<ul class="slides">
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image.png"
+									alt="Slide 1"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Северная корона
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-1.png"
+									alt="Slide 2"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Moscow barbering school
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-2.png"
+									alt="Slide 3"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Rh store
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-3.png"
+									alt="Slide 4"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Poolspecial
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image.png"
+									alt="Slide 5"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Lorem, ipsum
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-1.png"
+									alt="Slide 6"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Lorem, ipsum dolor
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-2.png"
+									alt="Slide 7"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Lorem, ipsum dolor
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="slide">
+								<img
+									class="slide__image"
+									src="./assets/img/slider/image-3.png"
+									alt="Slide 8"
+								/>
+								<div class="slide__caption text text-t2_b text-white">
+									Lorem, ipsum dolor
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+				<div class="slider-dummy"></div>
+			</section>
+			<section class="image-picker" id="image-picker">
+				<div class="image-picker-content section-content">
+					<h2 class="hidden">Слайдер</h2>
+					<img
+						class="picked-image"
+						src="./assets/img/image-picker/forest.png"
+						alt="forest"
+					/>
+					<ul class="image-picker__buttons">
+						<li>
+							<label class="radio-button text text-t1">
+								<img src="./assets/img/image-picker/forest.png" alt="forest" />
+								<input type="radio" name="pick" value="forest" checked />
+								Картинка 1
+							</label>
+						</li>
+						<li>
+							<label class="radio-button text text-t1">
+								<img
+									src="./assets/img/image-picker/forest-1.png"
+									alt="forest-1"
+								/>
+								<input type="radio" name="pick" value="forest-1" />
+								Картинка 2
+							</label>
+						</li>
+						<li>
+							<label class="radio-button text text-t1">
+								<img
+									src="./assets/img/image-picker/forest-2.png"
+									alt="forest-2"
+								/>
+								<input type="radio" name="pick" value="forest-2" />
+								Картинка 3
+							</label>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="faq" id="faq">
+				<div class="faq-content section-content">
+					<h2 class="heading heading-h2">Ответы на вопросы</h2>
+					<ul class="faq__list">
+						<li>
+							<div class="faq-item">
+								<div class="faq-item__head">
+									<span>У вас много проектов?</span>
+									<label class="faq-item__button">
+										<input name="faq" type="checkbox" />
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+												fill="var(--color-text-gray-white)"
+											/>
+										</svg>
+									</label>
+								</div>
+								<div class="faq-item__answer">
+									<div class="faq-item__answer__collapse">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Blanditiis nam temporibus inventore! Molestias voluptates
+										vitae molestiae animi nam eveniet praesentium.
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="faq-item">
+								<div class="faq-item__head">
+									<span>Есть ли карьерный рост?</span>
+									<label class="faq-item__button">
+										<input name="faq" type="checkbox" />
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+												fill="var(--color-text-gray-white)"
+											/>
+										</svg>
+									</label>
+								</div>
+								<div class="faq-item__answer">
+									<div class="faq-item__answer__collapse">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Minus, reiciendis.
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="faq-item">
+								<div class="faq-item__head">
+									<span>У вас большой штат?</span>
+									<label class="faq-item__button">
+										<input name="faq" type="checkbox" />
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+												fill="var(--color-text-gray-white)"
+											/>
+										</svg>
+									</label>
+								</div>
+								<div class="faq-item__answer">
+									<div class="faq-item__answer__collapse">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Fuga sequi molestiae incidunt vel repellat quibusdam
+										repellendus beatae vitae assumenda reprehenderit, quaerat
+										eos eligendi rem impedit ipsa, obcaecati illo eius quidem,
+										placeat minus voluptatibus doloremque dolor! Doloribus illo
+										placeat ipsum optio odit dolore, minus nemo molestiae
+										laborum unde suscipit cupiditate exercitationem!
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="faq-item">
+								<div class="faq-item__head">
+									<span>Какие цели у вашей студии?</span>
+									<label class="faq-item__button">
+										<input name="faq" type="checkbox" />
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+												fill="var(--color-text-gray-white)"
+											/>
+										</svg>
+									</label>
+								</div>
+								<div class="faq-item__answer">
+									<div class="faq-item__answer__collapse">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Quibusdam repellat beatae repellendus tempore. Aut culpa
+										facere ea minus quia blanditiis obcaecati quam veritatis
+										quos iusto. Natus nostrum praesentium facere placeat?
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="form">
+			<div class="footer-content section-content">
+				<div class="form-container">
+					<div class="form-info">
+						<h2 class="form-info__heading heading heading-h2">Форма ОС</h2>
+						<p class="form-info__text text text-t2 text-white">
+							Сверстай форму обратной связи. Будет круто, если заявки будут
+							приходить сюда: a@growtask.ru
+						</p>
+					</div>
+					<div class="form-contacts">
+						<p class="heading heading-h4 text-white">
+							Не забудь вставить соц.сети
+						</p>
+						<div class="form-info__socials">
+							<a
+								class="social-link"
+								href="https://vk.com/growtask"
+								target="_blank"
+							>
+								<svg
+									width="28"
+									height="18"
+									viewBox="0 0 28 18"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.1798 17.3996C6.15993 17.3996 1.01515 11.0933 0.800781 0.599609H5.31896C5.46736 8.30171 8.79828 11.5642 11.4366 12.2368V0.599609H15.691V7.24225C18.2963 6.95637 21.0336 3.92934 21.9571 0.599609H26.2114C25.8634 2.3265 25.1698 3.96159 24.1739 5.40261C23.178 6.84363 21.9013 8.05957 20.4235 8.97438C22.073 9.81028 23.53 10.9934 24.6982 12.4457C25.8664 13.898 26.7194 15.5864 27.2008 17.3996H22.5177C22.0856 15.8247 21.2073 14.415 19.9928 13.347C18.7784 12.279 17.282 11.6003 15.691 11.396V17.3996H15.1798Z"
+										fill="#0077FF"
+									/>
+								</svg>
+							</a>
+							<a
+								class="social-link"
+								href="https://t.me/growtask"
+								target="_blank"
+							>
+								<svg
+									width="24"
+									height="21"
+									viewBox="0 0 24 21"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M23.6008 1.12306L19.9943 19.9511C19.9943 19.9511 19.4897 21.2565 18.1035 20.6305L9.78227 14.0235L9.74368 14.004C10.8677 12.9589 19.5837 4.84359 19.9646 4.47574C20.5543 3.90603 20.1882 3.56687 19.5035 3.99722L6.62893 12.464L1.66195 10.7333C1.66195 10.7333 0.88029 10.4454 0.805093 9.81932C0.728906 9.19223 1.68767 8.85307 1.68767 8.85307L21.9365 0.627128C21.9365 0.627128 23.6008 -0.130093 23.6008 1.12306Z"
+										fill="#27A6E5"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<form class="form" action="#">
+						<div class="form__inputs">
+							<input
+								class="input"
+								id="form-question"
+								type="text"
+								maxlength="80"
+								placeholder="Напиши вопрос*"
+								required
+							/>
+							<input
+								class="input"
+								type="text"
+								id="form-tel-or-email"
+								placeholder="Телефон или почта*"
+								required
+							/>
+							<input
+								class="input"
+								id="form-name"
+								type="text"
+								placeholder="Твоё имя*"
+								required
+							/>
+							<input
+								class="input"
+								type="url"
+								id="form-social"
+								placeholder="Соц.сеть или мессенджер"
+							/>
+						</div>
+						<div class="form__submit">
+							<input
+								type="submit"
+								class="button text text-t3_b text-white"
+								value="Отправить заявку"
+								disabled
+							/>
+							<label class="form__submit__politics">
+								<span class="checkbox__text text text-t3">
+									<input class="hidden" type="checkbox" name="agree-politics" />
+									Согласие с политикой
+								</span>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
