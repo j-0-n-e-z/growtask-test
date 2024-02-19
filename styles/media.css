@@ -269,7 +269,7 @@
 		flex-flow: row nowrap;
 		gap: 16px;
 		margin-right: -16px;
-		overflow-x: hidden;
+		overflow-x: scroll;
 	}
 
 	.vacancy__images li {
@@ -323,6 +323,18 @@
 }
 
 @media screen and (width <= 720px) {
+	.logo {
+		background: 0 url('../assets/logos/logo-mobile.svg') no-repeat;
+	}
+
+	.logo:hover {
+		translate: 0;
+	}
+
+	.logo:active {
+		background: 0 url('../assets/logos/logo-mobile.svg') no-repeat;
+	}
+
 	.hero-content {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, auto);
@@ -338,8 +350,8 @@
 	}
 
 	.hero__image {
-		height: 163px;
-		width: 163px;
+		height: 43vw;
+		width: 43vw;
 	}
 
 	.vacancy-content {
@@ -370,5 +382,15 @@
 	.form__submit {
 		flex-flow: column-reverse;
 		gap: 16px;
+	}
+
+	.form-info__socials {
+		justify-content: center;
+	}
+}
+
+@media screen and (width <= 375px) {
+	.hero__banner {
+		white-space: wrap;
 	}
 }

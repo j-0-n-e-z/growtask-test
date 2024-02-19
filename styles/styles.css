@@ -138,6 +138,7 @@
 .hero__banner {
 	align-self: start;
 	display: flex;
+	align-items: center;
 	gap: 20px;
 	grid-area: 2 / span 1;
 	max-width: 504px;
